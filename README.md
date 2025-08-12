@@ -1,0 +1,2 @@
+# bitcore
+hosting a site
