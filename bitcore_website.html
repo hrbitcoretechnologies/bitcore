@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BitCore Technologies - Innovating Embedded Solutions for a Smarter Future">
+    <meta name="keywords" content="Embedded Systems, Firmware Development, IoT Solutions, BitCore Technologies">
+    <title>BitCore Technologies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
+        body {background-color: #fff; color: #333;}
+        header {background: #0D6EFD; color: white; padding: 1rem 5%; position: sticky; top: 0; display: flex; justify-content: space-between; align-items: center; z-index: 1000;}
+        header h1 {font-size: 1.5rem;}
+        nav a {color: white; margin-left: 20px; text-decoration: none; font-weight: 500;}
+        nav a:hover {text-decoration: underline;}
+        .hero {display: flex; flex-wrap: wrap; align-items: center; padding: 4rem 5%; background: #F8F9FA;}
+        .hero-text {flex: 1;}
+        .hero-text h2 {font-size: 2.5rem; margin-bottom: 1rem; color: #0D6EFD;}
+        .hero-text p {margin-bottom: 1.5rem; font-size: 1.1rem;}
+        .btn {background: #0D6EFD; color: white; padding: 0.8rem 1.5rem; border: none; border-radius: 5px; cursor: pointer; font-size: 1rem;}
+        .btn:hover {background: #084298;}
+        .hero-img {flex: 1; text-align: center;}
+        .hero-img img {max-width: 100%; height: auto;}
+        section {padding: 4rem 5%;}
+        h2.section-title {text-align: center; color: #0D6EFD; font-size: 2rem; margin-bottom: 2rem;}
+        .about, .services, .contact {display: flex; flex-wrap: wrap; gap: 2rem; align-items: center;}
+        .about-text, .contact-info {flex: 1;}
+        .about-img, .contact-form, .services-grid {flex: 1; text-align: center;}
+        .about-img img, .services-grid img {max-width: 100%; height: auto;}
+        .services-grid {display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center;}
+        .service-card {background: white; border: 1px solid #ddd; border-radius: 10px; padding: 1.5rem; flex: 1 1 calc(33% - 1rem); min-width: 250px; transition: 0.3s;}
+        .service-card:hover {transform: translateY(-5px); box-shadow: 0 4px 15px rgba(0,0,0,0.1);}
+        form input, form textarea {width: 100%; padding: 0.8rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 5px;}
+        form button {width: 100%;}
+        footer {background: #222; color: white; text-align: center; padding: 1rem;}
+        @media (max-width: 768px) {
+            .hero {flex-direction: column;}
+            .about, .services, .contact {flex-direction: column;}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BitCore Technologies</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h2>Innovating Embedded Solutions for a Smarter Future</h2>
+            <p>Delivering excellence in Embedded Systems, Firmware Development, and IoT Solutions since 2024.</p>
+            <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact Us</button>
+        </div>
+        <div class="hero-img">
+            <img src="https://via.placeholder.com/500x300?text=Tech+Illustration" alt="Tech Illustration">
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Us</h2>
+        <div class="about">
+            <div class="about-text">
+                <p>BitCore Technologies is a leading technology services company with high expertise in software development and silicon design services. Founded in 2024, we offer a wide range of solutions to our clients and are committed to providing them with the highest quality.</p>
+            </div>
+            <div class="about-img">
+                <img src="https://via.placeholder.com/400x250?text=About+Us+Illustration" alt="About Illustration">
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="https://via.placeholder.com/100?text=Embedded" alt="Embedded">
+                <h3>Embedded System Design</h3>
+                <p>Cutting-edge embedded solutions tailored to your needs.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://via.placeholder.com/100?text=Firmware" alt="Firmware">
+                <h3>Firmware Development</h3>
+                <p>Reliable firmware for performance-driven applications.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://via.placeholder.com/100?text=IoT" alt="IoT">
+                <h3>IoT Solutions</h3>
+                <p>Smart IoT systems that connect devices and people seamlessly.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact">
+            <div class="contact-info">
+                <p><strong>Email:</strong> hrbitcoretechnologies@gmail.com</p>
+                <p><strong>Location:</strong> Kondapur, Telangana, India</p>
+            </div>
+            <div class="contact-form">
+                <form action="mailto:hrbitcoretechnologies@gmail.com" method="post" enctype="text/plain">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 BitCore Technologies. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
